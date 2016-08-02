@@ -269,6 +269,8 @@ class AdminCustomFiles extends WireData implements Module, ConfigurableModule {
                 'modified' => $page->modified,
                 'createdUser' => $page->createdUser->name,
                 'modifiedUser' => $page->modifiedUser->name,
+                'rootParentID' => $page->rootParent->id,
+                'rootParentTemplate' => $page->rootParent->template->name
             );
             $data['template'] = $this->template_name;
             
